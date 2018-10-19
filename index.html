@@ -129,7 +129,7 @@
         }
     </style>
     <title>Template </title>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
     <link rel="preload" href="assets/css/main.css" as="style" onload="this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="assets/css/main.css">
@@ -139,6 +139,12 @@
     <noscript>
         <link rel="stylesheet" href="assets/css/plyr.css">
     </noscript>
+
+    <link rel="preload" href="assets/css/audioplayer.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/audioplayer.css">
+    </noscript>
+
     <script>
         /*loadCss*/
         !function (w) { "use strict"; var loadCSS = function (href, before, media) { function ready(cb) { return doc.body ? cb() : void setTimeout(function () { ready(cb) }) } function loadCB() { ss.addEventListener && ss.removeEventListener("load", loadCB), ss.media = media || "all" } var ref, doc = w.document, ss = doc.createElement("link"); if (before) ref = before; else { var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes; ref = refs[refs.length - 1] } var sheets = doc.styleSheets; ss.rel = "stylesheet", ss.href = href, ss.media = "only x", ready(function () { ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling) }); var onloadcssdefined = function (cb) { for (var resolvedHref = ss.href, i = sheets.length; i--;)if (sheets[i].href === resolvedHref) return cb(); setTimeout(function () { onloadcssdefined(cb) }) }; return ss.addEventListener && ss.addEventListener("load", loadCB), ss.onloadcssdefined = onloadcssdefined, onloadcssdefined(loadCB), ss }; "undefined" != typeof exports ? exports.loadCSS = loadCSS : w.loadCSS = loadCSS }("undefined" != typeof global ? global : this);
@@ -735,7 +741,7 @@
     </div>
     <!-- Video -->
     <video id="plyr-video" poster="https://http2.mlstatic.com/painel-lona-fosca-sublimaco-150-por-10-dragon-boll-super-D_NQ_NP_636547-MLB27867713255_072018-F.jpg" controls>
-        <source src="assets/image/kuroko.mp4" type="video/mp4">
+        <source src="" type="video/mp4">
         <!-- Captions are optional -->
         <!-- <track kind="captions" label="English captions" src="/path/to/video-caption.vtt" srclang="en" default> -->
     </video>
@@ -755,14 +761,28 @@
                 <p class="small">جميع الحقوق محفوظة © 2018</p>
             </div>
         </div>
+        <div class="box-audio">
+            <div class="info-audio">
+                <img width="56" src="https://avatarfiles.alphacoders.com/946/94610.jpg" alt="">
+                <p class="title-date">
+                    <p>Tuneln Conversation berner and troo</p>
+                    <span class="date">18/10/2018</span>
+                </p>
+            </div>
+            <div class="clip-audio">
+                <audio src="assets/aud.mp3" preload="auto" controls>
+            </div>
+        </div>
+        </audio>
     </footer>
 
 
-    <script>(function (href, before, media) { "use strict"; var ss = window.document.createElement("link"); var ref = before || window.document.getElementsByTagName("script")[0]; var sheets = window.document.styleSheets; ss.rel = "stylesheet"; ss.href = href; ss.media = "only x"; ref.parentNode.insertBefore(ss, ref); function toggleMedia() { var defined; for (var i = 0; i < sheets.length; i++) { if (sheets[i].href && sheets[i].href.indexOf(href) > -1) { defined = true; } } if (defined) { ss.media = media || "all"; } else { setTimeout(toggleMedia); } } toggleMedia(); return ss; })('//fonts.googleapis.com/css?family=Cairo:600,700,900&amp;subset=arabic');</script>
+    <!-- <script>(function (href, before, media) { "use strict"; var ss = window.document.createElement("link"); var ref = before || window.document.getElementsByTagName("script")[0]; var sheets = window.document.styleSheets; ss.rel = "stylesheet"; ss.href = href; ss.media = "only x"; ref.parentNode.insertBefore(ss, ref); function toggleMedia() { var defined; for (var i = 0; i < sheets.length; i++) { if (sheets[i].href && sheets[i].href.indexOf(href) > -1) { defined = true; } } if (defined) { ss.media = media || "all"; } else { setTimeout(toggleMedia); } } toggleMedia(); return ss; })('//fonts.googleapis.com/css?family=Cairo:600,700,900&amp;subset=arabic');</script> -->
 
 
     <script defer src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script defer src="assets/js/plyr.js"></script>
+    <script defer src="assets/js/audioplayer.js"></script>
     <script defer src="assets/js/main.js"></script>
     <script>
         window.onload = function (params) {

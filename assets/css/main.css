@@ -144,3 +144,54 @@ select option[disabled] {
 .mobile .user-info .name {
     line-height: 40px;
 }
+
+
+.box-audio {
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    -webkit-box-shadow:0 0 8px 1px rgba(0,0,0,.5);
+		-moz-box-shadow: 0 0 8px 1px rgba(0,0,0,.5);
+		box-shadow: 0 0 8px 1px rgba(0,0,0,.5);
+    z-index: 99999;
+}
+
+.box-audio .info-audio {
+    width: 100%;
+    background: #fff;
+    position: relative;
+    padding: 16px 6px;
+}
+
+
+
+
+.box-audio .info-audio img {
+
+    display: block;
+        margin: auto;
+}
+
+.box-audio .info-audio marquee{
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 0;
+}
+.box-audio .info-audio p {
+    margin: 0;
+    font-weight: bold;
+    color: #000;
+}
+.box-audio .info-audio .date {
+    color: #888;
+}
+
+.box-audio .clip-audio {
+    width: 100%;
+}
+
+footer .container {
+    margin-bottom: 228px;
+}

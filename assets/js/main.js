@@ -74,3 +74,6 @@ $('.upload-btn').on('click',function(){
 })
 
 plyr.setup("#plyr-video");
+$(function () {
+    $('audio').audioPlayer();
+});
