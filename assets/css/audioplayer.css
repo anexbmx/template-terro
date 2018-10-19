@@ -323,12 +323,8 @@
 	}
 	.audioplayer-volume-adjust div div
 	{
-		background: -webkit-gradient( linear, left bottom, left top, from( #007fd1 ), to( #c600ff ) );
-		background: -webkit-linear-gradient( bottom, #007fd1, #c600ff );
-		background: -moz-linear-gradient( bottom, #007fd1, #c600ff );
-		background: -ms-radial-gradient( bottom, #007fd1, #c600ff );
-		background: -o-linear-gradient( bottom, #007fd1, #c600ff );
-		background: linear-gradient( to top, #007fd1, #c600ff );
+		 
+		background-color: #F44336;
 	}
 
 	.audioplayer *,
