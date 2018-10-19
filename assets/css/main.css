@@ -152,8 +152,8 @@ select option[disabled] {
     left:0;
     width: 100%;
     -webkit-box-shadow:0 0 8px 1px rgba(0,0,0,.5);
-		-moz-box-shadow: 0 0 8px 1px rgba(0,0,0,.5);
-		box-shadow: 0 0 8px 1px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 0 8px 1px rgba(0,0,0,.5);
+	box-shadow: 0 0 8px 1px rgba(0,0,0,.5);
     z-index: 99999;
     display: none;
 }
@@ -185,6 +185,10 @@ select option[disabled] {
     padding-left: 6px;
 }
 
+.box-audio .info-audio .favoris {
+
+}
+
 .box-audio .clip-audio {
     width: 100%;
 }
@@ -206,6 +210,18 @@ select option[disabled] {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+
+    .box-audio .info-audio .date {
+            position: relative;
+        top: -10px;
+        display: block;
+        left: 5px;
+    }
+    .box-audio .info-audio .favoris {
+        position: absolute;
+         top: 55px;
+        left: 68px;
     }
     .box-audio .clip-audio {
         width: calc(100% - 400px);
