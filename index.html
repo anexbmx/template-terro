@@ -193,6 +193,8 @@
             </div>
         </div>
         <!-- End: user info mobile -->
+
+        <!-- start: Navbar -->
         <nav class="navprimary">
             <div class="navwrap" aria-hidden="false">
                 <h6 class="showmobile navheading" data-title="القائمة الرئيسية">القائمة الرئيسية</h6>
@@ -324,9 +326,11 @@
                 </a>
             </div>
         </nav>
+        <!-- End Navbar -->
     </header>
     <div id="page">
         <main class="main" role="document">
+            <!-- start: Slider -->
             <div class="homeslider">
                 <div id="slider" class="home">
                     <div id="home_slider" class=" loading">
@@ -365,19 +369,21 @@
                     </div>
                 </div>
             </div>
+            <!-- End: Slider -->
             <div id="more-seachable" class="featuredstack section">
                 <div class="container fullwidth">
                     <h2 class="carousel__title _rtl">الأكثر بحثا</h2>
                 </div>
                 <div class="carouselwrap">
 
+                    <!-- Start: carousel Of items -->
                     <div class="carousel__track">
                         <div class="carousel" data-screen-view="4" data-tablet-view="2" data-mobile-view="1" data-position="">
                             <!-- start: fetch Data from Database  -->
                             <!-- <element> -->
                             <!-- End: Fetch DT -->
 
-                            <!-- item 1 -->
+                            <!-- Exemple 1 -->
                             <div class="carousel__bucket bucket">
                                 <div class="bucket__image imgbackground">
                                     <a href="https://ctc.usma.edu/two-houses-divided-conflict-syria-shaped-future-jihadism/" title="Read Two Houses Divided: How Conflict in Syria Shaped the Future of Jihadism">
@@ -396,7 +402,7 @@
                                         class="bucket__callout callout">Read</a>
                                 </div>
                             </div>
-                            <!-- item 2 -->
+                            <!-- Exemple 2 -->
                             <div class="carousel__bucket bucket">
                                 <div class="bucket__image imgbackground">
                                     <a href="https://ctc.usma.edu/al-qaidas-first-american-foreign-fighter-9-11/" title="Read Al-Qa`ida’s First American Foreign Fighter after 9/11">
@@ -414,7 +420,7 @@
                                         class="bucket__callout callout">Read</a>
                                 </div>
                             </div>
-                            <!-- item 3 -->
+                            <!-- Exemple 3 -->
                             <div class="carousel__bucket bucket">
                                 <div class="bucket__image imgbackground">
                                     <a href="https://ctc.usma.edu/pulling-back-the-curtain-an-inside-look-at-the-islamic-states-media-organization/" title="Read Pulling Back the Curtain: An Inside Look at the Islamic State’s Media Organization">
@@ -433,7 +439,7 @@
                                         class="bucket__callout callout">Read</a>
                                 </div>
                             </div>
-                            <!-- item 4 -->
+                            <!-- Exemple 4 -->
                             <div class="carousel__bucket bucket">
                                 <div class="bucket__image imgbackground">
                                     <a href="https://ctc.usma.edu/june-2018-cologne-ricin-plot-new-threshold-jihadi-bio-terror/" title="Read The June 2018 Cologne Ricin Plot: A New Threshold in Jihadi Bio Terror">
@@ -454,7 +460,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- End: carousel Of items -->
 
+                    <!-- Start: button navigation (left right) -->
                     <div class="carousel__nav">
                         <button class="nav left icon icon-arrow-left"></button>
                         <button class="nav right icon icon-arrow-right"></button>
@@ -465,6 +473,7 @@
                         <div class='item-3 carousel__bubble'></div>
                         <div class='item-4 carousel__bubble'></div>
                     </div>
+                    <!-- End: button navigation (left right) -->
                 </div>
             </div>
 
@@ -494,6 +503,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Start: Most Searched Groups -->
             <div class="groupsstack section">
                 <div class="container fullwidth">
                     <h2 class="groupsstack__title _rtl">الجماعات الأكثر بحثا</h2>
@@ -550,6 +561,9 @@
                     </div>
                 </div>
             </div>
+            <!-- End: Most Searched Groups -->
+
+            <!-- Start: Most searched areas -->
             <div class="regionstack section">
                 <div class="container fullwidth">
                     <h2 class="carousel__title _rtl">المناطق الأكثر بحثا</h2>
@@ -559,8 +573,11 @@
                         <button class="nav left icon icon-arrow-left"></button>
                         <button class="nav right icon icon-arrow-right"></button>
                     </div>
+
+                    <!-- fetch items from database -->
                     <div class="carousel__track">
                         <div class="carousel" data-screen-view="4" data-tablet-view="2" data-mobile-view="1" data-position="">
+                            <!-- start: exemple of items -->
                             <a class="carousel__bucket bucket middle-east imgbackground" href="https://ctc.usma.edu/regions/middle-east">
                                 <img src="https://ctc.usma.edu//app/uploads/2017/11/ctc-home-regions-middle-east-300x200.jpg" alt="Middle East region map icon">
                                 <h3 class="regiontitle">Middle East</h3>
@@ -585,6 +602,7 @@
                                 <img src="https://ctc.usma.edu//app/uploads/2017/11/ctc-home-regions-africa-300x200.jpg" alt="Africa region map icon">
                                 <h3 class="regiontitle">Africa</h3>
                             </a>
+                            <!-- end: exemple of items -->
                         </div>
                     </div>
                     <div class="carousel__bubblenav">
@@ -597,14 +615,17 @@
                     </div>
                 </div>
             </div>
+            <!-- End: Most searched areas -->
         </main>
     </div>
+
+    <!-- Start: Section(Register/login/Password) -->
     <div id="register-sec" class="kicker">
         <div class="kicker__wrap">
             <div class="kicker__logo">
                 <img src="assets/image/logo.png">
             </div>
-            <!-- Form login -->
+            <!-- Start : Form login -->
             <div id="box-login" class="kicker__content text-center form-x">
                 <h2 class="kicker__title">تسجيل الدخول</h2>
                 <div class="kicker_message">
@@ -621,7 +642,7 @@
                     <b>إنشاء حساب</b>
                 </p>
             </div>
-            <!-- End Form login -->
+            <!-- End : Form login -->
 
             <!-- Form register -->
             <div id="box-register" class="kicker__content text-center form-x">
@@ -631,14 +652,14 @@
                     <form name="" action="page" method="POST" class="login _rtl harmonydocuments__filters linklist__dropdown upperspace">
                         <input class="m-5" name="fullName" type="text" placeholder="الإسم الكامل">
                         <input class="m-5" name="email" type="email" placeholder="البريد الإلكتروني">
-                        <select name="subscriber" id="">
+                        <select name="subscriber">
                             <option disabled="" selected="" value="">مدة الإشتراك</option>
                             <option value="mar">شهر</option>
                             <option value="it">ثلاثة أشهر</option>
                             <option value="fr">ستة أشهر</option>
                             <option value="esp">سنة</option>
                         </select>
-                        <select name="countries" id="">
+                        <select name="countries">
                             <option disabled="" selected="" value="">الدولة</option>
                             <option value="mar">المغرب</option>
                             <option value="it">إيطاليا</option>
@@ -683,6 +704,9 @@
             <!-- End send email-->
         </div>
     </div>
+    <!-- End: Section(Register/login/Password) -->
+
+    <!-- Start: Section(Search) -->
     <div id="search-sec" class="skinny">
         <div class="_rtl">
             <h3 class="harmonydocuments__title">بحث</h3>
@@ -738,14 +762,50 @@
                 </p>
             </form>
         </div>
+        <!-- Start: Exemple of Seached Items -->
+        <div class="harmonydocuments__table container fullwidth" style="margin-top: 16px;">
+            <header class="harmonydocuments__table__header upperspace">
+                <p class="harmonydocuments__item__title">Title</p>
+                <p class="harmonydocuments__item__description">Description</p>
+                <p class="harmonydocuments__item__refnumber">Reference Number</p>
+            </header>
+            <ul class="harmonydocuments__table__contents">
+                <li class="harmonydocuments__item">
+                    <h5 class="harmonydocuments__item__title">
+                        <a href="/harmony-program/letter-from-abu-hamza-to-ansar-al-sunnah-highlighting-divisions-original-language-2/">Letter from Abu Hamza to Ansar al-Sunnah Highlighting Divisions</a>
+                    </h5>
+                    <p class="harmonydocuments__item__description">This document is a letter from Abu Hamzah in response to unfriendly letters he received. In his letter, Abu Hamzah...</p>
+                    <p class="harmonydocuments__item__refnumber upperspace">
+                        NMEC-2007-636878
+                    </p>
+                </li>
+                <li class="harmonydocuments__item">
+                    <h5 class="harmonydocuments__item__title">
+                        <a href="/harmony-program/letter-from-abu-hamza-al-mujahir-to-abi-abdullah-al-shafii-original-language-2/">Letter from Abu Hamza al-Mujahir to Abi `Abdullah al-Shafi`i</a>
+                    </h5>
+                    <p class="harmonydocuments__item__description">This document is part of a letter from Abu Hamza to Abu `Abdullah al-Shafi`i. In this letter, Abu Hamza starts...</p>
+                    <p class="harmonydocuments__item__refnumber upperspace">
+                        NMEC-2007-636898
+                    </p>
+                </li>
+        
+                <nav class="paginationlinks">
+                </nav>
+                <!-- .pagination -->
+            </ul>
+        </div>
+        <!-- End: Exemple of Seached Items -->
     </div>
-    <!-- Video -->
+    <!-- End: Section(Search) -->
+
+    <!-- Start: Exemple Embed Video -->
     <video id="plyr-video" poster="https://http2.mlstatic.com/painel-lona-fosca-sublimaco-150-por-10-dragon-boll-super-D_NQ_NP_636547-MLB27867713255_072018-F.jpg" controls>
         <source src="" type="video/mp4">
         <!-- Captions are optional -->
         <!-- <track kind="captions" label="English captions" src="/path/to/video-caption.vtt" srclang="en" default> -->
     </video>
-    <!-- Video -->
+    <!-- End: Exemple Embed Video -->
+
     <footer class="colophon">
         <div class="container">
             <h4 class="menutitle pointer ">البحث في الموقع</h4>
@@ -761,20 +821,23 @@
                 <p class="small">جميع الحقوق محفوظة © 2018</p>
             </div>
         </div>
-        <div class="box-audio">
-            <div class="info-audio">
-                <img width="56" src="https://avatarfiles.alphacoders.com/946/94610.jpg" alt="">
-                <p class="title-date">
-                    <p>Tuneln Conversation berner and troo</p>
-                    <span class="date">18/10/2018</span>
-                </p>
-            </div>
-            <div class="clip-audio">
-                <audio src="assets/aud.mp3" preload="auto" controls>
-            </div>
-        </div>
-        </audio>
     </footer>
+
+    <!-- Start: box (Audio) -->
+    <div class="box-audio">
+        <div class="info-audio">
+            <img width="56" src="https://avatarfiles.alphacoders.com/946/94610.jpg" alt="">
+            <p class="title-date">
+                <p>Tuneln Conversation berner and troo</p>
+                <span class="date">18/10/2018</span>
+            </p>
+        </div>
+        <div class="clip-audio">
+            <audio src="assets/aud.mp3" preload="auto" controls>
+            </audio>
+        </div>
+    </div>
+    <!-- End: Box (Audio) -->
 
 
     <script>(function (href, before, media) { "use strict"; var ss = window.document.createElement("link"); var ref = before || window.document.getElementsByTagName("script")[0]; var sheets = window.document.styleSheets; ss.rel = "stylesheet"; ss.href = href; ss.media = "only x"; ref.parentNode.insertBefore(ss, ref); function toggleMedia() { var defined; for (var i = 0; i < sheets.length; i++) { if (sheets[i].href && sheets[i].href.indexOf(href) > -1) { defined = true; } } if (defined) { ss.media = media || "all"; } else { setTimeout(toggleMedia); } } toggleMedia(); return ss; })('//fonts.googleapis.com/css?family=Cairo:600,700,900&amp;subset=arabic');</script>

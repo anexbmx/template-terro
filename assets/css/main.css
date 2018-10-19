@@ -163,6 +163,7 @@ select option[disabled] {
     background: #fff;
     position: relative;
     padding: 16px 6px;
+    text-align: center;
 }
 
 
@@ -177,9 +178,11 @@ select option[disabled] {
     margin: 0;
     font-weight: bold;
     color: #000;
+    padding-left: 6px;
 }
 .box-audio .info-audio .date {
     color: #888;
+    padding-left: 6px;
 }
 
 .box-audio .clip-audio {
@@ -190,6 +193,7 @@ select option[disabled] {
     .box-audio .info-audio {
         width: 400px ;
         float: left ;
+        text-align: left;
         
     }
 
