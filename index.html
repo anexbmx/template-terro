@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="frontend ">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+    <noscript>
+        <style>
+            .archive__section__article,
+            .bucket,
+            .homeslider__message,
+            .homeslider__title,
+            img {
+                opacity: 1!important;
+                transform: translate(0, 0)!important
+            }
+
+            .homeslider__wrap::before {
+                bottom: 0!important
+            }
+
+            .homeslider .slide img,
+            .imgbackground img {
+                transform: translate(-50%, -50%)!important
+            }
+
+            .arrow-nav,
+            .bubble-nav,
+            .carousel__bubblenav,
+            .carousel__nav {
+                display: none
+            }
+
+            .carousel {
+                flex-wrap: wrap!important
+            }
+
+            .introcontent.hashero .introcontent__wrap {
+                transform: translate(-50%, -50%)
+            }
+
+            .introcontent.hashero .introcontent__content {
+                opacity: 1;
+                transform: translateY(0)
+            }
+
+            @media screen and (min-width:65rem) {
+                .introcontent.hashero .introcontent__wrap {
+                    transform: translate(0, -50%)
+                }
+            }
+
+            @media screen and (min-width:80rem) {
+                .introcontent.hashero .introcontent__wrap {
+                    transform: translate(-50%, -50%)
+                }
+            }
+        </style>
+    </noscript>
+    <style>
+        body {
+            padding: 0;
+            margin: 0
+        }
+
+        .p-loading {
+            margin: 0;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background: #011A24;
+            z-index: 99999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 0
+        }
+
+        .spinner {
+            width: 70px;
+            text-align: center
+        }
+
+        .spinner>div {
+            width: 18px;
+            height: 18px;
+            background-color: #9A9A9A;
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both
+        }
+
+        .spinner .bounce1 {
+            -webkit-animation-delay: -.32s;
+            animation-delay: -.32s
+        }
+
+        .spinner .bounce2 {
+            -webkit-animation-delay: -.16s;
+            animation-delay: -.16s
+        }
+
+        @-webkit-keyframes sk-bouncedelay {
+            0%,
+            100%,
+            80% {
+                -webkit-transform: scale(0)
+            }
+            40% {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes sk-bouncedelay {
+            0%,
+            100%,
+            80% {
+                -webkit-transform: scale(0);
+                transform: scale(0)
+            }
+            40% {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+    </style>
+    <title>Template </title>
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <link rel="preload" href="assets/css/main.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/main.css">
+    </noscript>
+
+    <link rel="preload" href="assets/css/plyr.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/plyr.css">
+    </noscript>
+    <script>
+        /*loadCss*/
+        !function (w) { "use strict"; var loadCSS = function (href, before, media) { function ready(cb) { return doc.body ? cb() : void setTimeout(function () { ready(cb) }) } function loadCB() { ss.addEventListener && ss.removeEventListener("load", loadCB), ss.media = media || "all" } var ref, doc = w.document, ss = doc.createElement("link"); if (before) ref = before; else { var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes; ref = refs[refs.length - 1] } var sheets = doc.styleSheets; ss.rel = "stylesheet", ss.href = href, ss.media = "only x", ready(function () { ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling) }); var onloadcssdefined = function (cb) { for (var resolvedHref = ss.href, i = sheets.length; i--;)if (sheets[i].href === resolvedHref) return cb(); setTimeout(function () { onloadcssdefined(cb) }) }; return ss.addEventListener && ss.addEventListener("load", loadCB), ss.onloadcssdefined = onloadcssdefined, onloadcssdefined(loadCB), ss }; "undefined" != typeof exports ? exports.loadCSS = loadCSS : w.loadCSS = loadCSS }("undefined" != typeof global ? global : this);
+
+        /*link[rel=preload] polyfill*/
+        !function (w) { if (w.loadCSS) { var rp = loadCSS.relpreload = {}; if (rp.support = function () { try { return w.document.createElement("link").relList.supports("preload") } catch (e) { return !1 } }, rp.poly = function () { for (var links = w.document.getElementsByTagName("link"), i = 0; i < links.length; i++) { var link = links[i]; "preload" === link.rel && "style" === link.getAttribute("as") && (w.loadCSS(link.href, link), link.rel = null) } }, !rp.support()) { rp.poly(); var run = w.setInterval(rp.poly, 300); w.addEventListener && w.addEventListener("load", function () { w.clearInterval(run) }), w.attachEvent && w.attachEvent("onload", function () { w.clearInterval(run) }) } } }(this);
+    </script>
+
+    <style type="text/css">
+        .broken_link,
+        a.broken_link {
+            text-decoration: line-through;
+        }
+    </style>
+
+</head>
+
+<body class="home page">
+
+    <div class="p-loading">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <header class="siteheader ">
+        <a class="brand" href="#">
+            <img src="assets/image/logo-top.png" alt="Combating Terrorism Center Logo" title="Combating Terrorism Center Logo">
+        </a>
+        <!-- start: user info mobile -->
+        <div class="mobile">
+            <div class=" _rtl user-info showmobile">
+                <img id="avatar-user" src="assets/image/avatar.png" alt="">
+                <span class="name">
+                    <span class="icon icon-chevron-small-down"></span>
+                    <span>naruto uzu</span>
+                </span>
+                <ul>
+                    <li>تعديل البيانا الشخصية</li>
+                    <li>...</li>
+                    <li>...</li>
+                    <li>الخروج</li>
+                </ul>
+            </div>
+        </div>
+        <!-- End: user info mobile -->
+        <nav class="navprimary">
+            <div class="navwrap" aria-hidden="false">
+                <h6 class="showmobile navheading" data-title="القائمة الرئيسية">القائمة الرئيسية</h6>
+                <div class="nav__outer scrollable">
+                    <ul id="menu-primary" class="nav">
+
+                        <li class="menu-item menu-time">
+                            <a href="#">الفترة</a>
+                            <span class="icon"></span>
+                        </li>
+
+                        <li class="menu-item menu-item-has-children menu-zone">
+                            <a href="#">المنطقة
+
+                            </a>
+                        </li>
+
+                        <li id="menu-sigha" class="menu-item menu-item-has-children menu-education">
+                            <a href="#">
+                                <span class="icon icon-chevron-small-down"></span>الصیغة </a>
+
+                            <ul class="sub-menu list-formula">
+                                <li data-index-target="1" class="menu-item menu-item-has-children menu-cadet-education">
+                                    <a href="#">مسموع</a>
+                                </li>
+                                <li data-index-target="2" class="menu-item menu-item-has-children menu-downing-scholars-program">
+                                    <a href="#">مقروء</a>
+                                </li>
+                                <li data-index-target="3" class="menu-item menu-practitioner-education">
+                                    <a href="#">مرئي</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+                        <li id="menu-author" class="inactive menu-item menu-item-has-children menu-research">
+                            <a href="#">
+                                <span class="icon icon-chevron-small-down"></span>المؤلف </a>
+
+                            <ul class="sub-menu list-authors">
+                                <li data-index-target="1" class="inactive menu-item menu-item-has-children menu-data-primary-sources">
+                                    <a href="#">جماعي</a>
+                                </li>
+
+                                <li data-index-target="2" class="inactive menu-item menu-item-has-children menu-regions">
+                                    <a href="#">فردي</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="inactive menu-item menu-item-has-children menu-research2 showmobile">
+                            <a href="#">الصيغة
+                                <span class="icon"></span>
+                            </a>
+
+                            <ul class="sub-menu">
+                                <li class="inactive menu-item menu-item-has-children menu-data-primary-sources">
+                                    <a href="#">مسموع</a>
+                                </li>
+
+                                <li class="inactive menu-item menu-item-has-children menu-regions">
+                                    <a href="#">مقروء</a>
+                                </li>
+
+                                <li class="inactive menu-item menu-item-has-children menu-regions">
+                                    <a href="#">مرئي</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <!-- Start: When user not connected -->
+                        <!-- <li data-id-target="#box-login" id="menu-login" class="menu-item menu-item-has-children menu-about">
+                            <a href="#" >الدخول</a>
+                        </li>
+
+                        <li data-id-target="#box-register" id="menu-register" class="menu-item menu-item-has-children menu-about">
+                            <a href="#" >إنشاء حساب</a>
+                        </li> -->
+                        <!-- End: When user not connected -->
+
+                        <!--  Start: When user connected -->
+                        <li  class="menu-item menu-item-has-children _rtl user-info">
+                            <img id="avatar-user" src="assets/image/avatar.png" alt="">
+                            <span class="name">
+                                <span class="icon icon-chevron-small-down"></span>
+                                <span>naruto uzu</span>
+                            </span>
+                            <ul>
+                                <li>تعديل البيانا الشخصية</li>
+                                <li>...</li>
+                                <li>...</li>
+                                <li>الخروج</li>
+                            </ul>
+                        </li>
+                        <!--  End: When user connected -->
+                    </ul>
+                </div>
+            </div>
+            <div class="quicknav">
+                <ul>
+                    <li>
+                        <a href="#" class="quicknavlink__research">
+                            <span class="icon icon-chevron-small-down"></span>
+                            المؤلف
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#' class="quicknavlink__research2">
+                            <span class="icon icon-chevron-small-down"></span>
+                            الصيغة
+                        </a>
+                    </li>
+                    <li class="menu-zone">
+                        <a href='#'>المنطقة</a>
+                    </li>
+                </ul>
+                <div class="navmobileheader">
+                    <a href="#">
+                        <span class="icon icon-arrow-left"></span>
+                        <span class="navmobileheader__title" data-title="غلق">غلق</span>
+                    </a>
+                </div>
+                <a class="navmobile" href="#">
+                    <span class="navicon">
+                        <span></span>
+                    </span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div id="page">
+        <main class="main" role="document">
+            <div class="homeslider">
+                <div id="slider" class="home">
+                    <div id="home_slider" class=" loading">
+                        <!-- .slider-image -->
+                        <div class="item-0 slide">
+                            <img src="assets/image/slider-1.jpg" alt="title" />
+                        </div>
+                        <!-- .slider-image -->
+                        <div class="item-1 slide">
+                            <img src="assets/image/slider-2.jpg" alt="title" />
+                        </div>
+                        <!-- .slider-image -->
+                        <div class="bubble-nav">
+                            <div class="item-0 bubble"></div>
+                            <!-- .slide.nav -->
+                            <div class="item-1 bubble"></div>
+                            <!-- .slide.nav -->
+                        </div>
+                        <!-- .bubble-nav -->
+                        <div class="arrow-nav">
+                            <button class="nav-left icon icon-arrow-left"></button>
+                            <button class="nav-right icon icon-arrow-right"></button>
+                        </div>
+                        <!-- .slider-nav -->
+                    </div>
+                    <!-- #slider -->
+                </div>
+                <div class="homeslider__content">
+                    <div class="homeslider__wrap">
+                        <h1 class="homeslider__title xlarge">وثائق، صور، فيديوهات وتسجيلات صوتية</h1>
+
+                        <div class="homeslider__message introcopy">
+                            <p>مرحبا بكم في أضخم موقع عربي بحثي خاص لرصد ظاهرة التطرف والإرهاب</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="more-seachable" class="featuredstack section">
+                <div class="container fullwidth">
+                    <h2 class="carousel__title _rtl">الأكثر بحثا</h2>
+                </div>
+                <div class="carouselwrap">
+
+                    <div class="carousel__track">
+                        <div class="carousel" data-screen-view="4" data-tablet-view="2" data-mobile-view="1" data-position="">
+                            <!-- start: fetch Data from Database  -->
+                            <!-- <element> -->
+                            <!-- End: Fetch DT -->
+
+                            <!-- item 1 -->
+                            <div class="carousel__bucket bucket">
+                                <div class="bucket__image imgbackground">
+                                    <a href="https://ctc.usma.edu/two-houses-divided-conflict-syria-shaped-future-jihadism/" title="Read Two Houses Divided: How Conflict in Syria Shaped the Future of Jihadism">
+                                        <img src="https://ctc.usma.edu/app/uploads/2018/10/CTC-SENTINEL-102018_cover-232x300.jpg">
+                                    </a>
+                                </div>
+                                <div class="bucket__content">
+                                    <h5 class="carousel__bucket__title">
+                                        <a href="https://ctc.usma.edu/two-houses-divided-conflict-syria-shaped-future-jihadism/">Two Houses Divided: How Conflict in Syria Shaped the Future of Jihadism</a>
+                                    </h5>
+                                    <p class="bucket__excerpt">
+                                        Abstract: With the collapse of the Islamic State’s territorial caliphate, the global jihadi movement is in a state of flux.
+                                        But...
+                                    </p>
+                                    <a href="https://ctc.usma.edu/two-houses-divided-conflict-syria-shaped-future-jihadism/" title="Read Two Houses Divided: How Conflict in Syria Shaped the Future of Jihadism"
+                                        class="bucket__callout callout">Read</a>
+                                </div>
+                            </div>
+                            <!-- item 2 -->
+                            <div class="carousel__bucket bucket">
+                                <div class="bucket__image imgbackground">
+                                    <a href="https://ctc.usma.edu/al-qaidas-first-american-foreign-fighter-9-11/" title="Read Al-Qa`ida’s First American Foreign Fighter after 9/11">
+                                        <img src="https://ctc.usma.edu/app/uploads/2018/09/CTC-SENTINEL-092018_cover-232x300.jpg">
+                                    </a>
+                                </div>
+                                <div class="bucket__content">
+                                    <h5 class="carousel__bucket__title">
+                                        <a href="https://ctc.usma.edu/al-qaidas-first-american-foreign-fighter-9-11/">Al-Qa`ida’s First American Foreign Fighter after 9/11</a>
+                                    </h5>
+                                    <p class="bucket__excerpt">
+                                        Abstract: Bryant Neal Viñas was the first American to be recruited into al-Qa`ida after 9/11. This is the first time he...
+                                    </p>
+                                    <a href="https://ctc.usma.edu/al-qaidas-first-american-foreign-fighter-9-11/" title="Read Al-Qa`ida’s First American Foreign Fighter after 9/11"
+                                        class="bucket__callout callout">Read</a>
+                                </div>
+                            </div>
+                            <!-- item 3 -->
+                            <div class="carousel__bucket bucket">
+                                <div class="bucket__image imgbackground">
+                                    <a href="https://ctc.usma.edu/pulling-back-the-curtain-an-inside-look-at-the-islamic-states-media-organization/" title="Read Pulling Back the Curtain: An Inside Look at the Islamic State’s Media Organization">
+                                        <img src="https://ctc.usma.edu/app/uploads/2018/08/Advice-for-Media-Mujahid-highlight-image-300x215.jpg">
+                                    </a>
+                                </div>
+                                <div class="bucket__content">
+                                    <h5 class="carousel__bucket__title">
+                                        <a href="https://ctc.usma.edu/pulling-back-the-curtain-an-inside-look-at-the-islamic-states-media-organization/">Pulling Back the Curtain: An Inside Look at the Islamic State’s Media Organization</a>
+                                    </h5>
+                                    <p class="bucket__excerpt">
+                                        Report Description Over the past five years, there has been a significant amount of discussion on the propaganda created
+                                        and...
+                                    </p>
+                                    <a href="https://ctc.usma.edu/pulling-back-the-curtain-an-inside-look-at-the-islamic-states-media-organization/" title="Read Pulling Back the Curtain: An Inside Look at the Islamic State’s Media Organization"
+                                        class="bucket__callout callout">Read</a>
+                                </div>
+                            </div>
+                            <!-- item 4 -->
+                            <div class="carousel__bucket bucket">
+                                <div class="bucket__image imgbackground">
+                                    <a href="https://ctc.usma.edu/june-2018-cologne-ricin-plot-new-threshold-jihadi-bio-terror/" title="Read The June 2018 Cologne Ricin Plot: A New Threshold in Jihadi Bio Terror">
+                                        <img src="https://ctc.usma.edu/app/uploads/2018/08/CTC-SENTINEL-082018_cover-232x300.jpg">
+                                    </a>
+                                </div>
+                                <div class="bucket__content">
+                                    <h5 class="carousel__bucket__title">
+                                        <a href="https://ctc.usma.edu/june-2018-cologne-ricin-plot-new-threshold-jihadi-bio-terror/">The June 2018 Cologne Ricin Plot: A New Threshold in Jihadi Bio Terror</a>
+                                    </h5>
+                                    <p class="bucket__excerpt">
+                                        Abstract: In June 2018, German security services uncovered an alleged terrorist plot involving ricin by a Tunisian extremist
+                                        living in Cologne...
+                                    </p>
+                                    <a href="https://ctc.usma.edu/june-2018-cologne-ricin-plot-new-threshold-jihadi-bio-terror/" title="Read The June 2018 Cologne Ricin Plot: A New Threshold in Jihadi Bio Terror"
+                                        class="bucket__callout callout">Read</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel__nav">
+                        <button class="nav left icon icon-arrow-left"></button>
+                        <button class="nav right icon icon-arrow-right"></button>
+                    </div>
+                    <div class="carousel__bubblenav">
+                        <div class='item-1 carousel__bubble active'></div>
+                        <div class='item-2 carousel__bubble'></div>
+                        <div class='item-3 carousel__bubble'></div>
+                        <div class='item-4 carousel__bubble'></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="homesheet section">
+                <div class="container flex">
+                    <div class="homesheet__wrap">
+                        <div class="homesheet__image">
+                            <a href="https://ctc.usma.edu/ctc-sentinel/">
+                                <img src="https://ctc.usma.edu/app/uploads/2018/10/CTC-SENTINEL-102018_cover-232x300.jpg">
+                            </a>
+                        </div>
+
+                        <div class="homesheet__content">
+
+                            <img class="homesheet__logo" src="https://ctc.usma.edu/app/themes/ctc/dist/images/ctc-sentinel-logo_7f9a17b8.svg">
+
+                            <div class="homesheet__message">
+                                <p>The CTC Sentinel is a monthly, independent publication that leverages the Center’s global
+                                    network of scholars and practitioners to understand and confront contemporary threats
+                                    posed by terrorism and other forms of political violence.</p>
+
+                            </div>
+
+
+                            <a class="callout" href="https://ctc.usma.edu/ctc-sentinel/">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="groupsstack section">
+                <div class="container fullwidth">
+                    <h2 class="groupsstack__title _rtl">الجماعات الأكثر بحثا</h2>
+                </div>
+                <div class="groupsstack__wrap stack__wrap">
+                    <div class="groupbucket bucket">
+                        <div class="groupbucket__content">
+                            <h5 class="groupbucket__title">
+                                <a href="/terrorist-groups/islamic-state-predecessor-groups/">Islamic State &amp; Predecessor Groups</a>
+                            </h5>
+                            <div class="groupbucket__message">
+                                This is the gateway to resources, research, and analysis the Combating Terrorism Center has produced over the last decade
+                                about...
+                            </div>
+                            <a href="/terrorist-groups/islamic-state-predecessor-groups/" class="callout bucket__callout carousel__bucket__callout groupbucket__callout"
+                                href="">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="groupbucket bucket">
+                        <div class="groupbucket__content">
+                            <h5 class="groupbucket__title">
+                                <a href="/terrorist-groups/al-qaida-affiliates/">Al-Qa&#039;ida &amp; Affiliates</a>
+                            </h5>
+                            <div class="groupbucket__message">
+                                Al-Qa`ida has been a primary area of research focus for the CTC since our founding, and this page serves as...
+                            </div>
+                            <a href="/terrorist-groups/al-qaida-affiliates/" class="callout bucket__callout carousel__bucket__callout groupbucket__callout"
+                                href="">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="groupbucket bucket">
+                        <div class="groupbucket__content">
+                            <h5 class="groupbucket__title">
+                                <a href="/terrorist-groups/boko-haram/">Boko Haram</a>
+                            </h5>
+                            <div class="groupbucket__message">
+                                Learn more about this deadly Nigeria-based group&#039;s suicide operations, the attackers who conduct them, and more.
+                            </div>
+                            <a href="/terrorist-groups/boko-haram/" class="callout bucket__callout carousel__bucket__callout groupbucket__callout" href="">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="groupbucket bucket">
+                        <div class="groupbucket__content">
+                            <h5 class="groupbucket__title">
+                                <a href="/terrorist-groups/haqqani-network/">Haqqani Network</a>
+                            </h5>
+                            <div class="groupbucket__message">
+                                The Center&#039;s foundational and on-going research on the Haqqani network is key to understanding the group and its evolution
+                                over...
+                            </div>
+                            <a href="/terrorist-groups/haqqani-network/" class="callout bucket__callout carousel__bucket__callout groupbucket__callout"
+                                href="">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="regionstack section">
+                <div class="container fullwidth">
+                    <h2 class="carousel__title _rtl">المناطق الأكثر بحثا</h2>
+                </div>
+                <div class="carouselwrap">
+                    <div class="carousel__nav">
+                        <button class="nav left icon icon-arrow-left"></button>
+                        <button class="nav right icon icon-arrow-right"></button>
+                    </div>
+                    <div class="carousel__track">
+                        <div class="carousel" data-screen-view="4" data-tablet-view="2" data-mobile-view="1" data-position="">
+                            <a class="carousel__bucket bucket middle-east imgbackground" href="https://ctc.usma.edu/regions/middle-east">
+                                <img src="https://ctc.usma.edu//app/uploads/2017/11/ctc-home-regions-middle-east-300x200.jpg" alt="Middle East region map icon">
+                                <h3 class="regiontitle">Middle East</h3>
+                            </a>
+                            <a class="carousel__bucket bucket europe imgbackground" href="https://ctc.usma.edu/regions/europe">
+                                <img src="https://ctc.usma.edu//app/uploads/2017/11/ctc-home-regions-europe-300x200.jpg" alt="Europe region map icon">
+                                <h3 class="regiontitle">Europe</h3>
+                            </a>
+                            <a class="carousel__bucket bucket south-central-asia imgbackground" href="https://ctc.usma.edu/regions/south-central-asia">
+                                <img src="https://ctc.usma.edu//app/uploads/2017/11/ctc-home-regions-central-asia-300x200.jpg" alt="Central Asia region map icon">
+                                <h3 class="regiontitle">South &amp; Central Asia</h3>
+                            </a>
+                            <a class="carousel__bucket bucket east-southeast-asia imgbackground" href="https://ctc.usma.edu/regions/east-southeast-asia">
+                                <img src="https://ctc.usma.edu//app/uploads/2017/11/ctc-home-regions-east-asia-300x200.jpg" alt="East Asia region map icon">
+                                <h3 class="regiontitle">East &amp; Southeast Asia</h3>
+                            </a>
+                            <a class="carousel__bucket bucket americas imgbackground" href="https://ctc.usma.edu/regions/americas">
+                                <img src="https://ctc.usma.edu//app/uploads/2017/11/ctc-home-regions-americas-300x200.jpg" alt="Americas region map icon">
+                                <h3 class="regiontitle">Americas</h3>
+                            </a>
+                            <a class="carousel__bucket bucket africa imgbackground" href="https://ctc.usma.edu/regions/africa">
+                                <img src="https://ctc.usma.edu//app/uploads/2017/11/ctc-home-regions-africa-300x200.jpg" alt="Africa region map icon">
+                                <h3 class="regiontitle">Africa</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__bubblenav">
+                        <div class='item-1 carousel__bubble active'></div>
+                        <div class='item-2 carousel__bubble'></div>
+                        <div class='item-3 carousel__bubble'></div>
+                        <div class='item-4 carousel__bubble'></div>
+                        <div class='item-5 carousel__bubble'></div>
+                        <div class='item-6 carousel__bubble'></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="register-sec" class="kicker">
+        <div class="kicker__wrap">
+            <div class="kicker__logo">
+                <img src="assets/image/logo.png">
+            </div>
+            <!-- Form login -->
+            <div id="box-login" class="kicker__content text-center form-x">
+                <h2 class="kicker__title">تسجيل الدخول</h2>
+                <div class="kicker_message">
+                    <p>لتمكن من مشاهدت مواد البحث</p>
+                    <form name="" action="page" method="POST" class="login _rtl ">
+                        <input class="m-5" name="email" type="email" placeholder="البريد الإلكتروني">
+                        <input class="m-5" name="password" type="password" placeholder="كلمة المرور">
+                        <input type="submit" value="الدخول">
+                    </form>
+                    <a class="forgot-pwd change-form pointer" data-id-target="#box-send-email">نسيت كلمة المرور ؟</a>
+                </div>
+                <br>
+                <p href="" class="new-compte change-form" data-id-target="#box-register">ليس لديك حساب ؟
+                    <b>إنشاء حساب</b>
+                </p>
+            </div>
+            <!-- End Form login -->
+
+            <!-- Form register -->
+            <div id="box-register" class="kicker__content text-center form-x">
+                <h2 class="kicker__title">إنشاء حساب</h2>
+                <div class="kicker_message">
+                    <p>المرجو إدخال جميع المعلومات بشكل صحيح</p>
+                    <form name="" action="page" method="POST" class="login _rtl harmonydocuments__filters linklist__dropdown upperspace">
+                        <input class="m-5" name="fullName" type="text" placeholder="الإسم الكامل">
+                        <input class="m-5" name="email" type="email" placeholder="البريد الإلكتروني">
+                        <select name="subscriber" id="">
+                            <option disabled="" selected="" value="">مدة الإشتراك</option>
+                            <option value="mar">شهر</option>
+                            <option value="it">ثلاثة أشهر</option>
+                            <option value="fr">ستة أشهر</option>
+                            <option value="esp">سنة</option>
+                        </select>
+                        <select name="countries" id="">
+                            <option disabled="" selected="" value="">الدولة</option>
+                            <option value="mar">المغرب</option>
+                            <option value="it">إيطاليا</option>
+                            <option value="fr">فرنسا</option>
+                            <option value="esp">إسبانيا</option>
+                            <option value="...">...</option>
+                        </select>
+                        <input class="m-5" name="adress" type="text" placeholder="العنوان" style="flex: 100%;">
+                        <input class="m-5" name="city" type="text" placeholder="المدينة">
+                        <input class="m-5" name="phone" type="number" placeholder="رقم الهاتف">
+                        <input class="m-5" name="password" type="password" placeholder="كلمة المرور">
+                        <input class="m-5" name="password" type="password" placeholder="تأكيد كلمة المرور">
+                        <div style="flex: 100%;">
+                            <img id="img-user" class="img-circle" src="assets/image/avatar.png" alt="">
+                            <p class="pointer upload-btn"> 🠉 رفع الصورة الشخصية </p>
+                            <input id="inputFile" type="file" name="img-user" style="display: none">
+                        </div>
+                        <input type="submit" value="الدخول">
+                    </form>
+                </div>
+                <p href="" class="new-compte change-form" data-id-target="#box-login">لديك حساب ؟
+                    <b>تسجيل الدخول</b>
+                </p>
+            </div>
+            <!-- End Form register -->
+
+            <!-- Form send email -->
+            <div id="box-send-email" class="kicker__content text-center form-x">
+                <h2 class="kicker__title">نسيت كلمة المرور</h2>
+                <div class="kicker_message">
+                    <p>الرجاء إدخال عنوان البريد الإلكتروني، سنرسل لك رابطًا لإنشاء كلمة مرور جديدة</p>
+                    <form action="page" method="POST" class="login _rtl ">
+                        <input class="m-5" name="email" type="email" placeholder="البريد الإلكتروني">
+                        <input type="submit" value="إرسال">
+                    </form>
+                </div>
+                <br>
+                <p href="" class="new-compte change-form" data-id-target="#box-register">ليس لديك حساب ؟
+                    <b>إنشاء حساب</b>
+                </p>
+            </div>
+            <!-- End send email-->
+        </div>
+    </div>
+    <div id="search-sec" class="skinny">
+        <div class="_rtl">
+            <h3 class="harmonydocuments__title">بحث</h3>
+            <form action="page" class="harmonydocuments__filters linklist__dropdown upperspace">
+                <p>
+                    <select name="author" id="dropDown-authors">
+                        <option disabled="" selected="" value="">المؤلف</option>
+                        <option value="">جماعي</option>
+                        <option value="">فردي</option>
+                    </select>
+                </p>
+                <p>
+                    <select name="formula" id="dropDown-formula">
+                        <option disabled="" selected="" value="">الصيغة</option>
+                        <option value="al-qaida-in-the-arabian-peninsula">مسموع</option>
+                        <option value="aq-and-other-sunni-jihadist-groups-in-iraq">مقروء</option>
+                        <option value="aq-core-senior-leaders-key-advisors-trainers">مرئي</option>
+                    </select>
+                </p>
+                <p>
+                    <select name="zone" id="dropDown-zone">
+                        <option disabled="" selected="" value="">المنطقة</option>
+                        <option value="advice-or-criticism">Advice or Criticism (73)</option>
+                        <option value="al-qaidas-and-other-groups-goals">Al-Qa`ida's and Other Group's Goals (9)</option>
+                        <option value="condolences-letters">Condolences letters (1)</option>
+                        <option value="detailed-information-about-historical-battle">Detailed Information About Historical Battle (1)</option>
+                        <option value="foreign-fighters">Foreign Fighters (293)</option>
+                    </select>
+                </p>
+                <p>
+                    <select name="harmony-author">
+                        <option value="tahir-yuldashev">Tahir Yuldashev (1)</option>
+                        <option value="the-army-of-islam">The Army of Islam (1)</option>
+                        <option value="the-eritrean-islamic-jihad-movement">The Eritrean Islamic Jihad Movement (1)</option>
+                        <option value="yusuf-duali">Yusuf Du`ali (1)</option>
+                    </select>
+                </p>
+                <p>
+                    <span class="sous-title">من</span>
+                    <input type="date" class="">
+                </p>
+                <p>
+                    <span class="sous-title">إلى</span>
+                    <input type="date" class="">
+                </p>
+                <p>
+                    <input type="text" name="s" placeholder="أدخل كلمة البحث" value="">
+                </p>
+
+                <p>
+                    <input type="submit" value="بحث">
+                    <a href="#" class="formreset upperspace">إلغاء البحث</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <!-- Video -->
+    <video id="plyr-video" poster="https://http2.mlstatic.com/painel-lona-fosca-sublimaco-150-por-10-dragon-boll-super-D_NQ_NP_636547-MLB27867713255_072018-F.jpg" controls>
+        <source src="assets/image/kuroko.mp4" type="video/mp4">
+        <!-- Captions are optional -->
+        <!-- <track kind="captions" label="English captions" src="/path/to/video-caption.vtt" srclang="en" default> -->
+    </video>
+    <!-- Video -->
+    <footer class="colophon">
+        <div class="container">
+            <h4 class="menutitle pointer ">البحث في الموقع</h4>
+            <div class="sociallink">
+                <a class="icon icon-facebook" href="#" target="_blank"></a>
+                <a class="icon icon-twitter" href="#" target="_blank"></a>
+                <a class="icon icon-instagram" href="#" target="_blank"></a>
+                <a class="icon-youtube" href="#" target="_blank">
+                    <img src="assets/image/youtube.svg" alt="">
+                </a>
+            </div>
+            <div class="attribution">
+                <p class="small">جميع الحقوق محفوظة © 2018</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- <script>(function (href, before, media) { "use strict"; var ss = window.document.createElement("link"); var ref = before || window.document.getElementsByTagName("script")[0]; var sheets = window.document.styleSheets; ss.rel = "stylesheet"; ss.href = href; ss.media = "only x"; ref.parentNode.insertBefore(ss, ref); function toggleMedia() { var defined; for (var i = 0; i < sheets.length; i++) { if (sheets[i].href && sheets[i].href.indexOf(href) > -1) { defined = true; } } if (defined) { ss.media = media || "all"; } else { setTimeout(toggleMedia); } } toggleMedia(); return ss; })('//fonts.googleapis.com/css?family=Cairo:600,700,900&amp;subset=arabic');</script> -->
+
+
+    <script defer src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script defer src="assets/js/plyr.js"></script>
+    <script defer src="assets/js/main.js"></script>
+    <script>
+        window.onload = function (params) {
+            $('.p-loading').css('display', 'none')
+        }
+    </script>
+
+</body>
+
+</html>
