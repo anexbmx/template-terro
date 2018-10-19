@@ -166,19 +166,12 @@ select option[disabled] {
 
 
 
-
 .box-audio .info-audio img {
 
     display: block;
         margin: auto;
 }
 
-.box-audio .info-audio marquee{
-    position: absolute;
-    left:0;
-    top:0;
-    z-index: 0;
-}
 .box-audio .info-audio p {
     margin: 0;
     font-weight: bold;
@@ -191,6 +184,30 @@ select option[disabled] {
 .box-audio .clip-audio {
     width: 100%;
 }
+
+@media screen and (min-width: 850px) {
+    .box-audio .info-audio {
+        width: 400px ;
+        float: left ;
+        
+    }
+
+    .box-audio .info-audio img {
+           float: left;
+    }
+
+    .box-audio .info-audio  p {
+        width: 287px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .box-audio .clip-audio {
+        width: calc(100% - 400px);
+        float: left;
+    }
+}
+
 
 footer .container {
     margin-bottom: 228px;
