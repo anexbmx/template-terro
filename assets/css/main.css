@@ -4,8 +4,6 @@ body,html.frontend{background:#0f2a38}.icon,address{font-style:normal}.siteheade
 .embed-video {
     position: relative;
     background: black;
-    width: 95%;
-    margin: auto;
 }
 .embed-video .favoris {
     position: absolute;
