@@ -77,3 +77,19 @@ $(function () {
     plyr.setup("#plyr-video");
     $('audio').audioPlayer();
 });
+
+$('.btn-hide').on('click', function() {
+    $(".box-audio").animate({
+        bottom: "-261px"
+    },600);
+    $('.btn-show').show()
+    $('.btn-hide').hide()
+})
+
+$('.btn-show').on('click', function () {
+    $(".box-audio").animate({
+        bottom: "0"
+    }, 600)
+    $('.btn-show').hide()
+    $('.btn-hide').show()
+})
