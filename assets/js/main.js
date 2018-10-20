@@ -79,17 +79,17 @@ $(function () {
 });
 
 $('.btn-hide').on('click', function() {
+    $(this).hide()
+    $('.btn-show').show()
     $(".box-audio").animate({
         bottom: "-261px"
     },600);
-    $('.btn-show').show()
-    $('.btn-hide').hide()
 })
 
 $('.btn-show').on('click', function () {
     $(".box-audio").animate({
         bottom: "0"
     }, 600)
-    $('.btn-show').hide()
+    $(this).hide()
     $('.btn-hide').show()
 })
