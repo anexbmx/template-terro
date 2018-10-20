@@ -45,6 +45,9 @@ body,html.frontend{background:#0f2a38}.icon,address{font-style:normal}.siteheade
     .mobile .user-info ul {
         position: static;
     }
+    .mobile .user-info ul:after {
+        top: 24px;
+    }
     .box-audio button {
         background: #721825;
         border-radius: 5px;
