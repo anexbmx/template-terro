@@ -65,9 +65,11 @@ body,html.frontend{background:#0f2a38}.icon,address{font-style:normal}.siteheade
         z-index: 5;
         margin: 5px;
     }
+
     .box-audio .btn-show {
         display: none;
     }
+
     .box-audio button:active {
         opacity: 0.67;
     }
@@ -76,4 +78,15 @@ body,html.frontend{background:#0f2a38}.icon,address{font-style:normal}.siteheade
         width: 100%;
     }
    
+}
+
+@media screen and (min-width: 850px) {
+    .btn-display-audio {
+        display: none;
+    }
+
+    .box-audio {
+        bottom: 0 !important;
+        transition: all 0.3s ease-in-out;
+    }
 }
