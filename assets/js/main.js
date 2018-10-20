@@ -73,7 +73,7 @@ $('.upload-btn').on('click',function(){
     document.getElementById('inputFile').click()
 })
 
-plyr.setup("#plyr-video");
+//plyr.setup("#plyr-video");
 $(function () {
     $('audio').audioPlayer();
 });
